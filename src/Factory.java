@@ -1,31 +1,73 @@
 public class Factory {
+    //scope is whole class
+    public int yearfounded = 3005;
+    public String factoryName = "airplane factory";
+    public boolean isOpen = false;
 
-    //scope is the whole class
-    public int yearFounded = 1856;
-    public String factoryName = "gift Factory";
-    public boolean isOpen = true;
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Aidan's Factory");
-        new Factory(); // need this to play everything under
+        System.out.println("welcome to Aidan's factory");
+        new Factory();
 
     }
-    //constructor - type of method that always has the same name as the class and doesn't have void
-    // it allows us to make a factory
+    //constructor
+    //1. is a method
+    //2. has same name as class
+    //3. has no void
+
+
+    //constructor is a very special type of method which has the exact same name as the class
     public Factory(){
         isOpen = false;
-        // scope for manager is only in the constructor so you can only use it in this class
-        String manager = "MRosa";
-        factoryInfo();
+        //scope for manager is only in the contructory
+        String manager = "WonderWoman";
+        factoryinfo();
+
+        //call factoryInfo();
+
+        //type varName = value
+        //object of type airplane
+        Airplane plane1 = new Airplane();
+        plane1.name = "jeff";
+        System.out.println(plane1.name);
+        plane1.isDoubleDecker = false;
+        System.out.println(plane1.isDoubleDecker);
+        plane1.capacity = 1;
+        System.out.println(plane1.capacity);
+        plane1.length = 10;
+        System.out.println(plane1.length);
+        plane1.model = "invisiblePlane";
+        System.out.println(plane1.model);
+        Airplane plane2 = new Airplane();
+        plane2.capacity = 10;
+        System.out.println(plane2.capacity);
+        Airplane plane3 = new Airplane();
+        plane3.capacity = 5;
+        plane3.isDoubleDecker = true;
+        plane3.model = "coolPlane";
+        plane3.length = 20;
+        plane3.name = "Aidan Plane";
+        Airplane plane4 = new Airplane();
+        plane4.capacity = 10;
+        plane4.isDoubleDecker = false;
+        plane4.model = "newPlane";
+        plane4.length = 25;
+        plane4.name = "good Plane";
+
+
+
+
+
     }
 
+    public void factoryinfo(){
 
-    public void factoryInfo() {
-        System.out.println("year founded" + yearFounded); // the quotes turn the variable into what you actually want to print
-        System.out.println("factory name" + factoryName);
-        System.out.println("is open" + isOpen);
-        factoryInfo();
+        System.out.println(yearfounded);
+        System.out.println(factoryName);
+        System.out.println(isOpen);
+        System.out.println();
 
     }
+
 
 }
