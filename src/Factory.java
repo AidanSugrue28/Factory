@@ -47,17 +47,10 @@ public class Factory {
         plane3.model = "coolPlane";
         plane3.length = 20;
         plane3.name = "Aidan Plane";
-        Airplane plane4 = new Airplane();
-        plane4.capacity = 10;
-        plane4.isDoubleDecker = false;
-        plane4.model = "newPlane";
-        plane4.length = 25;
-        plane4.name = "good Plane";
 
-
-
-
-
+        Airplane plane5 = new Airplane(232);
+        System.out.println(plane5.capacity);
+        plane5.printInfo();
     }
 
     public void factoryinfo(){
@@ -69,5 +62,5 @@ public class Factory {
 
     }
 
-
+    //todo: make method called printInfo() that prints the airplanes instance variables
 }

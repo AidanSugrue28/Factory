@@ -8,6 +8,7 @@ public class Airplane {
     public String model;
     public boolean isDoubleDecker;
     public int length;
+
     //constructor
     public Airplane(){
         capacity = 250;
@@ -15,6 +16,23 @@ public class Airplane {
         model = "Boeing 737";
         isDoubleDecker = false;
         length = 175;
+    }
+    //constructor w parameter
+    public Airplane(int pCapacity){
+        capacity = pCapacity;
+        name = "Jacob6";
+        model = "Boeing 737";
+        isDoubleDecker = false;
+        length = 175;
+    }
+    public void printInfo(){
+        System.out.println(capacity);
+        System.out.println(name);
+        System.out.println(model);
+        System.out.println(isDoubleDecker);
+        System.out.println(length);
+
+
     }
 }
 
