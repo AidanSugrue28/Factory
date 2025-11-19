@@ -41,16 +41,21 @@ public class Factory {
         Airplane plane2 = new Airplane();
         plane2.capacity = 10;
         System.out.println(plane2.capacity);
-        Airplane plane3 = new Airplane();
-        plane3.capacity = 5;
-        plane3.isDoubleDecker = true;
-        plane3.model = "coolPlane";
-        plane3.length = 20;
-        plane3.name = "Aidan Plane";
 
-        Airplane plane5 = new Airplane(232);
-        System.out.println(plane5.capacity);
-        plane5.printInfo();
+
+        Airplane plane3 = new Airplane(232,"Jacob","big plane",false,100);
+        System.out.println(plane3.capacity);
+        plane3.printInfo();
+
+        Computer computer1 = new Computer();
+        System.out.println(computer1.computerName);
+        System.out.println(computer1.pixelNumber);
+        System.out.println(computer1.isOpen);
+
+        Computer computer2 = new Computer();
+        System.out.println(computer2.computerName);
+        System.out.println(computer2.pixelNumber);
+        System.out.println(computer2.isOpen);
     }
 
     public void factoryinfo(){
@@ -61,6 +66,9 @@ public class Factory {
         System.out.println();
 
     }
+
+
+
 
     //todo: make method called printInfo() that prints the airplanes instance variables
 }

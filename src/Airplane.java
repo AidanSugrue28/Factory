@@ -18,12 +18,12 @@ public class Airplane {
         length = 175;
     }
     //constructor w parameter
-    public Airplane(int pCapacity){
+    public Airplane(int pCapacity, String pName, String pModel, Boolean pDoubleDecker, int pLength){
         capacity = pCapacity;
-        name = "Jacob6";
-        model = "Boeing 737";
-        isDoubleDecker = false;
-        length = 175;
+        name = pName;
+        model = pModel;
+        isDoubleDecker = pDoubleDecker;
+        length = pLength;
     }
     public void printInfo(){
         System.out.println(capacity);
