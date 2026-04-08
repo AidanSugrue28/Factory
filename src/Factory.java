@@ -20,7 +20,7 @@ public class Factory {
     public Factory(){
         isOpen = false;
         //scope for manager is only in the contructory
-        String manager = "WonderWoman";
+        String manager = "Superman";
         factoryinfo();
 
         //call factoryInfo();
